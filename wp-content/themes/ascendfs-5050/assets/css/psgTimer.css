@@ -1,0 +1,14 @@
+.psgTimer {display: table;margin: 0 auto 0px auto;font-size: 0;font-family: "Roboto",sans-serif;}
+.psgTimer_numbers>div, .psgTimer_labels>div {display: inline-block;font-size: 0;width: 110px;text-align: center;}
+.psgTimer_numbers>div {position: relative;}
+.psgTimer_numbers>div:after {content: "";line-height: 60px;height: 60px;display: block;font-weight: bold;font-size: 24px;color: #21272c;position: absolute;top: 0;right: -4px;}
+.psgTimer_numbers>div:last-child:after {content: none;}
+.psgTimer_numbers>div>div {display: inline-block;vertical-align: top;width: 44px;height: 60px;box-shadow: 0px 4px 8px rgba(0,0,0,.2);border-radius: 6px;text-align: center;}
+.psgTimer_numbers>div>div:first-child {margin-right: 5px;}
+.psgTimer_labels>div {padding-top: 8px !important;font-size: 16px;line-height: 16px;text-transform: capitalize;letter-spacing: .1em;color: #4d4d4f;font-family: "Roboto",sans-serif;font-weight: 500;}
+@media screen and (max-width: 640px) {.psgTimer_numbers>div, .psgTimer_labels>div {width: 74px;}
+	.psgTimer_numbers>div {position: relative;}
+	.psgTimer_numbers>div:after {line-height: 40px;height: 40px;font-size: 16px;right: -2px;}
+	.psgTimer_numbers>div div {width: 26px;height: 40px;line-height: 40px;font-size: 16px;}
+	.psgTimer_numbers>div div:first-child {margin-right: 2px;}
+	.psgTimer_labels>div {font-size: 10px;line-height: 16px;}}
